@@ -24,7 +24,7 @@ body {
 }
 
 a {
-  color: var(--primary-color);
+  color: #712;
   text-decoration: none;
 }
 
@@ -42,10 +42,23 @@ img {
 
 /* Utilities */
 .container {
-  max-width: 1100px;
+  max-width: 800px;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
+  text-align: center;
+}
+
+.container-about {
+    text-align: center;
+    padding: 1rem;
+    background-color: #dc3545;
+    color: #fff;
+    display: inline-block;
+    box-shadow: 4px 4px 8px 0 rgb(0 0 0 / 20%);
+    border-width: 0.25rem;
+    border-radius: 0.5rem;
+    opacity: 0.9;
 }
 
 /* Text Styles*/
@@ -410,5 +423,47 @@ table th {
   .navbar ul {
     text-align: center;
     justify-content: center;
+  }
+}
+
+.social-icons {
+    font-size: 2.25rem;
+    padding: 1rem;
+    color: #fff;
+}
+
+.mt4 {
+  margin-top: 2rem;
+}
+
+.my1 {
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .card-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.user-info {
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .user-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 425px) {
+  .container {
+    padding: 0 1rem;
   }
 }

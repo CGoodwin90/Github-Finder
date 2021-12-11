@@ -57,7 +57,7 @@ const User = ({ match }) => {
           <h1>{name}</h1>
           {location && <p>Location: {location}</p>}
         </div>
-        <div>
+        <div className='user-info'>
           {bio && (
             <Fragment>
               <h3>Bio</h3>

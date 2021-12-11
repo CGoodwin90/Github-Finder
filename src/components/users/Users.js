@@ -13,7 +13,7 @@ const Users = () => {
     return <Spinner />;
   } else {
     return (
-      <div style={userStyle}>
+      <div style={userStyle} className="card-grid">
         {users.map((user) => (
           <UserItem key={user.id} user={user} />
         ))}
